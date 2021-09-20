@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+  }
+}
+
+.container .galery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container .galery {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.container .galery .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .galery .left img {
+  opacity: 0.7;
+  width: 50px;
+  margin: 0.5rem 0.25rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.25rem;
+  -webkit-transition: 300ms opacity;
+  transition: 300ms opacity;
+}
+
+.container .galery .left img:hover {
+  border: 2px solid #ffa349;
+  opacity: 1;
+}
+
+.container .galery .left .active {
+  border: 2px solid #ffa349;
+  opacity: 1;
+}
+
+.container .galery .main {
+  width: 20rem;
+  border-radius: 0.25rem;
+}
+
+.container .info {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container .info {
+    margin-top: 0.5rem;
+  }
+}
+
+.container .info h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #202020;
+}
+
+.container .info h2 span {
+  font-weight: 600;
+}
+
+.container .info p {
+  font-size: 0.75rem;
+  color: #202020;
+}
+
+.container .info p a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #0073b6;
+}
+
+.container .info .rating {
+  margin: 0.25rem 0;
+}
+
+.container .info .rating .stars {
+  display: inline-block;
+  color: #ffc400;
+}
+
+.container .info .rating .stars i {
+  font-size: 0.75rem;
+}
+
+.container .info .rating .stars i:last-child {
+  color: #cacaca;
+}
+
+.container .info .rating .rate {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #cacaca;
+}
+
+.container .info .rating .rate a {
+  text-decoration: none;
+  color: #cacaca;
+}
+
+.container .info .salary {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .info .salary .percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid #e90000;
+  color: #e90000;
+}
+
+.container .info .salary .percent i {
+  font-size: 0.5rem;
+}
+
+.container .info .salary .last {
+  margin-left: 1rem;
+  position: relative;
+  font-size: 1.5rem;
+  color: #646464;
+}
+
+.container .info .salary .last::before {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  left: -5%;
+  width: 110%;
+  height: 2px;
+  background: #646464;
+}
+
+.container .info .salary .new {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  color: #f07400;
+}
+
+.container .line {
+  margin: 1rem 0;
+  width: 100%;
+  height: 1px;
+  background: #cacaca;
+}
+
+.container .add-to-basket {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5rem;
+      grid-template-columns: 1fr 5rem;
+}
+
+.container .add-to-basket a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  background: #f07400;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.container .add-to-basket a:hover {
+  opacity: 0.7;
+}
+
+.container .add-to-basket i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  color: #646464;
+  height: 3rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+}
+
+.container .cargo {
+  padding: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .cargo p {
+  color: #646464;
+  font-weight: 600;
+}
+
+.container .cargo p span {
+  font-weight: 400;
+}
+
+.container ul {
+  font-size: 0.75rem;
+}
+
+.container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  color: #646464;
+}
+
+.container ul li:before {
+  content: "\2022";
+  color: #cacaca;
+  font-size: 1.75rem;
+  margin-right: 0.25rem;
+}
+/*# sourceMappingURL=main.css.map */
